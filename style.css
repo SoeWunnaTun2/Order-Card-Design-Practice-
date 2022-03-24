@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    background: url(./images/pattern-background-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.img img {
+    width: 100%;
+}
+
+.text {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+}
+.text h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+.text p {
+    font-size: 14.5px;
+    color: #928b8b;
+    font-weight: 500;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    padding: 15px;
+}
+.grp {
+    display: flex;
+    align-items: center;
+}
+
+.first img {
+    width: 35px;
+}
+.second {
+    font-size: 14px;
+    padding-left: 10px;
+    text-align: justify;
+}
+.second h3 {
+    font-weight: 700;
+    font-size: 14px;
+}
+.third a {
+    color: #3148ce;
+    font-weight: 700;
+    font-size: 12px;
+}
+.third a:hover {
+    text-decoration: none;
+    color: #8d9bee;
+    font-weight: bold;
+}
+
+.button {
+    margin-top: 30px;
+}
+.button a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3148ce;
+    padding: 10px 80px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.button a:hover {
+    background-color: #5468da;
+}
+
+.txt p {
+    margin: 30px;
+    font-weight: bold;
+}
+.txt p:hover {
+    cursor: pointer;
+    color: #3a3939;
+}
+
+/* Mobile */
+@media(max-width: 500px) {
+    main {
+        background: url(./images/pattern-background-mobile.svg) no-repeat cover;
+        background-position: center;
+    }
+}
